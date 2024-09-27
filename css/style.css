@@ -1,0 +1,78 @@
+.img-card-fit {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.img-cont {
+    height: 200px;
+    overflow: hidden;
+    background-color: beige;
+}
+
+.card-content {
+    height: 150px;
+    overflow: auto;
+}
+
+main {
+    min-height: calc(100vh - 100px);
+}
+
+.checked {
+    color: orange;
+}
+
+.offcanvas-top {
+    height: fit-content;
+}
+
+body {
+    color: antiquewhite;
+}
+
+.title-container {
+    display: flex; 
+    flex-direction: column; /* Cambiar la dirección a columna para que el tagline esté debajo */
+    align-items: flex-start; /* Alinear en la parte superior */
+    margin-bottom: 10px; 
+}
+
+.star-rating-container {
+    display: flex; 
+    justify-content: flex-end; /* Alinear las estrellas a la derecha */
+    width: 100%; 
+}
+
+.tagline {
+    margin: 0; 
+    color: white; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+    font-style: italic; 
+    width: 100%; 
+}
+
+.star-rating {
+    display: flex; /* Hacer que las estrellas se alineen horizontalmente */
+    align-items: center; /* Centrar verticalmente las estrellas */
+}
+
+.star-rating i {
+    color: yellow; /* Color de las estrellas llenas */
+}
+
+.offcanvas {
+    background-color: white; 
+    color: black; 
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #ccc; /* Línea divisoria */
+}
+
+.offcanvas-body {
+    padding: 20px; /* Espaciado interno */
+}
+
+
+

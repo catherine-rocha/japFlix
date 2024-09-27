@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Japflix</title> 
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script> 
+  
+  <link rel="stylesheet" href="css/style.css">  
+</head>
+
+
+<body class="bg-dark"> 
+  <main>
+    <div class="text-center container"> 
+      <div class="row py-lg-3"> 
+        <div class="col-lg-6 col-md-8 mx-auto"> 
+          <h1 class="fw-light"><img src="img/japflix.png" alt=""></h1> 
+          <!-- Buscador -->
+          <input type="search" class="form-control" name="buscar" id="inputBuscar" placeholder="Ej.: The Lion King"> 
+          <!-- Botón Buscar -->
+          <button class="btn btn-primary m-2" id="btnBuscar">Buscar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coincidencias -->
+    <div class="album">
+      <ul class="list-group container" id="lista"> 
+      </ul>
+    </div>
+  </main>
+
+  <!-- Offcanvas para mostrar detalles de la película -->
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasLabel"> <!-- Contenedor OffCanvas que aparece en la parte superior. -->
+    <div class="offcanvas-header"> <!-- Encabezado del OffCanvas. -->
+      <h5 id="offcanvasLabel">Detalles de la Película</h5> <!-- Título del OffCanvas. -->
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> <!-- Botón para cerrar el OffCanvas. -->
+    </div>
+    <div class="offcanvas-body"> <!-- Cuerpo del OffCanvas. -->
+      <h2 id="movieTitle"></h2> <!-- Título -->
+      <p id="movieOverview"></p> <!-- Descripción -->
+      <h4>Géneros:</h4> <!-- Título de la sección de géneros. -->
+      <ul id="movieGenres"></ul> <!-- Lista para mostrar los géneros de la película. -->
+  
+      <!-- Botón Dropdown -->
+      <div class="dropdown"> <!-- Contenedor del menú desplegable. -->
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"> <!-- Botón que despliega el menú. -->
+          Más información
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <!-- Menú desplegable. -->
+          <li><a class="dropdown-item" href="#" id="releaseYear"></a></li> <!-- Lanzamiento -->
+          <li><a class="dropdown-item" href="#" id="runtime"></a></li> <!-- Duración -->
+          <li><a class="dropdown-item" href="#" id="budget"></a></li> <!-- Presupuesto -->
+          <li><a class="dropdown-item" href="#" id="revenue"></a></li> <!-- Ganancias -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="text-muted py-3"> 
+    <div class="container"> 
+      <p class="float-end mb-1"> 
+        <a href="#">Volver arriba</a>
+      </p>
+      <p class="mb-1">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank"> Jovenes a Programar</a>.</p> <!-- Crédito del programa. -->
+      <p class="mb-1">Generado con fines estrictamente educativos.</p> 
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script> 
+  <script src="js/index.js"></script> 
+
+</body>
+
+</html>
